@@ -1,3 +1,3 @@
-require 'sinatra-dj'
+require 'app'
 
 run Sinatra::Application
