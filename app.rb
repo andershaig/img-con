@@ -2,9 +2,9 @@ require 'sinatra'
 require 'quick_magick'
 
 get '/' do
-#  i = QuickMagick::Image.read('oldmona.jpg').first
-#  i.resize "300x300!"
-#  i.save "newmona.jpg"
+  i = QuickMagick::Image.read('oldmona.jpg').first
+  i.resize "300x300!"
+  i.save "newmona.jpg"
   erb :output
 end
 
