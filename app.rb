@@ -1,8 +1,8 @@
 require 'sinatra'
-require 'quick_magick'
+require 'RMagick'
 
 get '/' do
-  i = QuickMagick::Image.read('oldmona.jpg').first
+  i = ImageList.new('oldmona.jpg')
   erb :output
 end
 
