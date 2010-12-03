@@ -4,7 +4,7 @@ require 'quick_magick'
 get '/' do
 #  i = QuickMagick::Image.read('oldmona.jpg')
   i = IO.read('public/ml.bmp').to_s
-  puts "Data collected is: #{i}"
+  
 #  erb :output
 end
 
@@ -22,7 +22,7 @@ __END__
 		</td>
 		<td>
 		<h2>Converted</h2>
-		<img src="newmona.jpg" alt="Converted Image Not Found" />
+		<%= puts "Data collected is: #{i}" %>
 		</td>
 	</tr>
 </table>
