@@ -1,9 +1,11 @@
 require 'sinatra'
-require 'RMagick'
+require 'quick_magick'
 
 get '/' do
-  i = ImageList.new('oldmona.jpg')
-  erb :output
+#  i = QuickMagick::Image.read('oldmona.jpg')
+  i = IO.read('ml.bmp').to_s
+  puts "Data collected is: #{i}"
+#  erb :output
 end
 
 __END__
