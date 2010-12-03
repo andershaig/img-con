@@ -2,8 +2,8 @@ require 'sinatra'
 require 'quick_magick'
 
 get '/' do
-#  i = QuickMagick::Image.read('oldmona.jpg')
-  i = IO.read('public/ml.bmp').to_s
+  i = QuickMagick::Image.read('public/oldmona.jpg')
+#  i = IO.read('public/ml.bmp').to_s
   
 #  erb :output
 end
