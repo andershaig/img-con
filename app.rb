@@ -2,7 +2,7 @@ require 'sinatra'
 require 'quick_magick'
 
 get '/' do
-  i = QuickMagick::Image.read('public/oldmona.jpg')
+  i = QuickMagick::Image.read('oldmona.jpg')
 #  i = IO.read('public/ml.bmp').to_s
   
 #  erb :output
@@ -22,7 +22,7 @@ __END__
 		</td>
 		<td>
 		<h2>Converted</h2>
-		<%= puts "Data collected is: #{i}" %>
+		<img src="newmona.jpg" alt="Converted Image Not Found" />
 		</td>
 	</tr>
 </table>
