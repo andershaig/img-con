@@ -3,7 +3,7 @@ require 'quick_magick'
 
 get '/' do
 #  i = QuickMagick::Image.read('oldmona.jpg')
-  i = IO.read('ml.bmp').to_s
+  i = IO.read('public/ml.bmp').to_s
   puts "Data collected is: #{i}"
 #  erb :output
 end
