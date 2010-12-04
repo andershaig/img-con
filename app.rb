@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
-require 'quick_magick'
+require 'RMagick'
+include Magick
 
 class CrazyCSS
   def initialize
@@ -9,10 +10,12 @@ class CrazyCSS
 end
 
 get '/' do
-  
-  @i = QuickMagick::Image.read('public/oldmona.jpg').first
-  
-#  i = QuickMagick::Image.read('public/oldmona.jpg').first
+  $pixels = []
+  @i = Image.read('public/oldmona.jpg').first
+  @i.each_pixel do |pixel, c, r|
+	  $pixels.push(pixel.to_color(compliance=AllCompliance, matte=false, depth=QuantumDepth, hex=false))
+	end
+#  @i = QuickMagick::Image.read('public/oldmona.jpg').first
 #  i.resize "300x300!"
 #  i.save "newmona.jpg"
   
@@ -33,9 +36,9 @@ __END__
 		</td>
 		<td>
 		<h2>Converted</h2>
-		Height: <%= @i.width %>
-		Width: <%= @i.height %>
-		<img src="newmona.jpg" alt="Converted Image Not Found" />
+		<div style="height:128px;width:128px;">
+		<%= $pixels.map {|i| "<span style='height:1px;width:1px;background-color:#{i};display:inline-block'></span>" } %>
+		</div>
 		</td>
 	</tr>
 </table>
