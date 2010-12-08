@@ -11,13 +11,10 @@ end
 
 get '/' do
   $pixels = []
-  @i = Image.read('public/oldmona.jpg').first
+  @i = Image.read('public/king.jpg').first
   @i.each_pixel do |pixel, c, r|
 	  $pixels.push(pixel.to_color(compliance=AllCompliance, matte=false, depth=QuantumDepth, hex=true))
 	end
-#  @i = QuickMagick::Image.read('public/oldmona.jpg').first
-#  i.resize "300x300!"
-#  i.save "newmona.jpg"
   
   erb :output
 end
