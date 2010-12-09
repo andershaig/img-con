@@ -1,0 +1,7 @@
+/* IE specific fixes */
+
+img, div {behavior: url(../img/iepngfix.htc)}
+
+/* ############################ */
+
+#main {padding-right:1px}
