@@ -9,7 +9,18 @@
 <![endif]-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script type="text/javascript">
-	// Simple AJAX to load them one at a time.
+	//function example_ajax_request() {
+	//  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
+	//  $('#burger-king').load("demos/burger_king.html");
+	//}
+	
+	function example_ajax_request() {
+	  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
+	  setTimeout('example_ajax_request_go()', 2000);
+	}
+	function example_ajax_request_go() {
+	  $('#burger-king').load("demos/burger_king.html");
+	}
 </script>
 </head>
 
@@ -29,6 +40,7 @@
         <div class="hr"></div>
         
         <div>EXAMPLE 1</div>
+		<div id="burger-king"><input type="button" onclick="example_ajax_request()" value="Click Me!" /></div>
         
         <div class="hr"></div>
 
