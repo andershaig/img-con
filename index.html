@@ -16,9 +16,6 @@
 	
 	function example_ajax_request() {
 	  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
-	  setTimeout('example_ajax_request_go()', 2000);
-	}
-	function example_ajax_request_go() {
 	  $('#burger-king').load("demos/burger_king.html");
 	}
 </script>
