@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>andershaig/img-con @ GitHub</title>
+<link rel="stylesheet" href="css/style.css"  type="text/css" media="all" />
+<!--[if IE]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+	//function example_ajax_request() {
+	//  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
+	//  $('#burger-king').load("demos/burger_king.html");
+	//}
+	
+	function bk_ajax_request() {
+	  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
+	  $('#burger-king').load("demos/burger_king.html");
+	}
+	
+	function marrily_ajax_request() {
+	  $('#marrily').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
+	  $('#marrily').load("demos/marrily_logo.html");
+	}
+	
+	function lisa_ajax_request() {
+	  $('#mona-lisa').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
+	  $('#mona-lisa').load("demos/mona_lisa.html");
+	}
+</script>
+</head>
+
+<body>
+<a href="http://github.com/andershaig/img-con"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+<div id="wrapper">
+	<div id="header">
+    	<h1><a href="http://minim.co/">
+    		<img id="logo" src="img/logo.png" alt="Iowa City Web Design and Website Development" height="100" width="380" />
+		</a></h1>
+    </div><!-- end #header -->
+    
+	<div id="content">
+        <div class="hr"></div>
+    	<p id="intro">Every few days, I come across a new "Look What I've Created in CSS Only!" type of post. They range from mildly unique to impressive and obviously time consuming but they all make me think the same thing; "You can create anything in CSS. Controlling things at a pixel level, the skies the limit." So I did just that, put together my own "Look What I Can Do" example which you can view below. The logo and image are created using HTML + CSS only. They're an enormous waste of space (roughly 16x the size of the same image with JPEG compression) so don't consider using this method in any project. The next time you view an amazing CSS only creation I hope that you're impressed with the method of creation rather than what was created. Anything is possible with a little CSS.</p>
+    
+        <div class="hr"></div>
+        
+        <div>EXAMPLE 1</div>
+		<div id="burger-king"><input type="button" onclick="bk_ajax_request()" value="Click Me!" /></div>
+        
+        <div class="hr"></div>
+
+		<div>EXAMPLE 2</div>
+        <div id="marrily"><input type="button" onclick="marrily_ajax_request()" value="Click Me!" /></div>
+
+        <div class="hr"></div>
+
+		<div>EXAMPLE 3</div>
+        <div id="mona-lisa"><input type="button" onclick="lisa_ajax_request()" value="Click Me!" /></div>
+        <div class="hr"></div>
+
+		<h2>Author</h2>
+		<p>Anders Haig (anders@minim.co)</p>
+	    <h2>Download</h2>
+	    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+	      by running:
+	      <pre>$ git clone git://github.com/andershaig/img-con</pre>
+	    </p>
+    </div><!-- end #content -->
+</div><!-- end #wrapper -->
+
+<div id="bottom">
+	<div id="footer">
+		<p>&copy; 2009-2010 Minim Group.</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-20131512-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

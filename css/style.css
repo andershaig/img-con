@@ -1,0 +1,69 @@
+body, div, dl, dt, dd, ul, li, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding: 0;	margin: 0}
+fieldset, img {border: 0}
+caption, th {text-align: left}
+ul, li{padding:0; margin:0}
+h1, h2, h3, h4, h5, h6 {font-weight: normal; font-size: 100%}
+q:before, q:after {content: ''}
+
+/* ############################ */
+
+body {
+	color:#303030;
+	background-color:#333;
+	font-family:verdana, Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 0px #eeeeee;
+}
+::selection {background: #0080FF; color:#FFF; text-shadow: 1px 1px 0px #111}
+::-moz-selection {background: #0080FF; color:#FFF; text-shadow: 1px 1px 0px #111}
+a, a:visited {color:#0080FF; text-decoration:none;}
+a:hover {color:#0080FF; text-decoration:underline;}
+h1 {padding:0 0 20px; font-family:Georgia, "Times New Roman", Times, serif; line-height:38px; color:#3b3a3a; font-size:2.5em; font-style:italic}
+h2 {padding:5px 0; font-family:Georgia, "Times New Roman", Times, serif; line-height:38px; color:#3b3a3a; font-size:1.5em; font-style:italic}
+p {font-size:12px; line-height:20px; color: #303030; font-weight:normal; margin-bottom:10px;}
+.hr {display:block; width:100%; height:2px; background:url(../img/hr.png) 0 0 repeat-x #DDD; margin:40px 0}
+pre {background:#303030; color:#DDD; padding:15px;text-shadow:none;}
+
+/* ############################ */
+
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	background:#DDD;
+	padding-bottom:50px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-webkit-box-shadow: 0 0 10px #181818;
+	-moz-box-shadow: 0 0 10px #181818;
+	box-shadow: 0 0 10px #181818; 
+}
+#bottom {height:80px;}
+	
+/* ############################ */
+
+#header {
+	height:110px;
+	margin:35px auto 0;
+	text-align:center;
+}
+#logo {padding:30px 0 0 0;}
+#content {margin:0 80px;}
+#burger-king span, #marrily span, #mona-lisa span {
+	height:1px;
+	width:1px;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	border:0;
+}
+#footer {
+	margin:0 auto; 
+	width:960px;
+}
+#footer p {
+	text-align:right; 
+	padding:10px 20px; 
+	color:#AAA; 
+	text-shadow:none;
+}
+#intro {font-family:Georgia, "Times New Roman", Times, serif; line-height:34px; color:#3b3a3a; font-size:20px; font-style:italic}
