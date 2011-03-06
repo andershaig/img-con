@@ -7,28 +7,6 @@
 <!--[if IE]>
     <link rel="stylesheet" href="css/ie.css" type="text/css" />
 <![endif]-->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript">
-	//function example_ajax_request() {
-	//  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
-	//  $('#burger-king').load("demos/burger_king.html");
-	//}
-	
-	function bk_ajax_request() {
-	  $('#burger-king').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
-	  $('#burger-king').load("demos/burger_king.html");
-	}
-	
-	function marrily_ajax_request() {
-	  $('#marrily').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
-	  $('#marrily').load("demos/marrily_logo.html");
-	}
-	
-	function lisa_ajax_request() {
-	  $('#mona-lisa').html('<p><img src="img/ajax-loader.gif" width="128" height="15" /></p>');
-	  $('#mona-lisa').load("demos/mona_lisa.html");
-	}
-</script>
 </head>
 
 <body>
@@ -46,18 +24,11 @@
     
         <div class="hr"></div>
         
-        <div>EXAMPLE 1</div>
-		<div id="burger-king"><input type="button" onclick="bk_ajax_request()" value="Click Me!" /></div>
+        <div>EXAMPLE</div>
+		<div id="burger-king">
+			<iframe src="/demos/burger_king.html" frameborder="0"></iframe>
+		</div>
         
-        <div class="hr"></div>
-
-		<div>EXAMPLE 2</div>
-        <div id="marrily"><input type="button" onclick="marrily_ajax_request()" value="Click Me!" /></div>
-
-        <div class="hr"></div>
-
-		<div>EXAMPLE 3</div>
-        <div id="mona-lisa"><input type="button" onclick="lisa_ajax_request()" value="Click Me!" /></div>
         <div class="hr"></div>
 
 		<h2>Author</h2>
